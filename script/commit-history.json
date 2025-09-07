@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "451d2ce1b4cfa59005e35da89a719f3cff34ff37",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T11:47:56.000Z",
       "message": "feat: se muestra cualquier hora ingresada",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/451d2ce1b4cfa59005e35da89a719f3cff34ff37"
     },
     "stats": {
       "total": 7,
@@ -34,6 +34,25 @@
     },
     "coverage": 100,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T11:52:07.000Z",
+      "message": "feat: se agrego validacion para que el usuario no ingrese una hora de ingreso vacio",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }

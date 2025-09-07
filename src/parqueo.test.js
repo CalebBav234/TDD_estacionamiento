@@ -9,4 +9,7 @@ describe("Funcionalidad 1 - Registrar hora de ingreso",  () => {
     const ingreso = registrarIngreso('2025-09-07T10:30');
     expect(ingreso).toBe('2025-09-07T10:30');
   });
+  it("deberia lanzar error si la hora de ingreso está vacía", () => {
+    expect(() => registrarIngreso("")).toThrow("Hora de ingreso requerida");
+  });
 });
