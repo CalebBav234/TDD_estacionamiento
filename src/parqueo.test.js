@@ -61,3 +61,21 @@ describe("Funcionalidad 4 - Redondeo por fracción de hora", () => {
         expect(calcularTarifaBasica(ingreso, salida)).toBe("20.00");
     });
 });
+describe("Funcionalidad 5 - Aplicar tarifa nocturna", () => {
+     it("debería cobrar Bs 6 por hora si toda la estadía es nocturna", () => {
+        const ingreso = registrarIngreso("2025-09-08T23:00");
+        const salida = registrarSalida("2025-09-09T01:00", ingreso);
+        expect(calcularTarifaBasica(ingreso, salida)).toBe("12.00"); 
+    });
+    it("debería calcular correctamente cuando la estadía cruza franja diurna y nocturna", () => {
+        const ingreso = registrarIngreso("2025-09-08T21:00"); 
+        const salida = registrarSalida("2025-09-08T23:00", ingreso); 
+        expect(calcularTarifaBasica(ingreso, salida)).toBe("16.00"); 
+    });
+    it("debería cobrar Bs 10 por hora si toda la estadía es diurna", () => {
+        const ingreso = registrarIngreso("2025-09-08T09:00");
+        const salida = registrarSalida("2025-09-08T11:00", ingreso);
+        expect(calcularTarifaBasica(ingreso, salida)).toBe("20.00"); 
+    });
+
+});

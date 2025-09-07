@@ -266,12 +266,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "1b5ceae9c013a230e3d256b93308146e3b4da709",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T22:14:20.000Z",
       "message": "feat: la logica de calculo de tarifa ahora usa 2 decimales",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/1b5ceae9c013a230e3d256b93308146e3b4da709"
     },
     "stats": {
       "total": 6,
@@ -281,6 +281,25 @@
     },
     "coverage": 100,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T23:40:09.000Z",
+      "message": "feat: se implemento el calculo de tarifas en la hora nocturna",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 41,
+      "additions": 34,
+      "deletions": 7,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
   }
