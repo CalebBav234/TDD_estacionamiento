@@ -114,17 +114,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4cf58d9167cfba6d5b2c794a2bd0e8e01f329ddc",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T12:39:55.000Z",
       "message": "feat: se lanza un error si el usuario no ingresa una hora de salida",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/4cf58d9167cfba6d5b2c794a2bd0e8e01f329ddc"
     },
     "stats": {
       "total": 10,
       "additions": 9,
       "deletions": 1,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T12:55:11.000Z",
+      "message": "feat: se implemento el ingreso de entrada en la UI para que use el usuario",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 54,
+      "additions": 27,
+      "deletions": 27,
       "date": "2025-09-07"
     },
     "coverage": 100,
