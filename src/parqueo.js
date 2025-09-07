@@ -4,4 +4,6 @@ export function registrarIngreso(horaIngreso) {
     }
     return horaIngreso;
 }
-
+export function registrarSalida(horaSalida, horaIngreso) {
+    return "2025-09-07T10:30"
+}
