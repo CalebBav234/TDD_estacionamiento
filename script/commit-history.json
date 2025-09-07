@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "aeaeb09bbf49d13fb9fd0a3b50e45b39d52548ec",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T12:37:43.000Z",
       "message": "feat: se valido que la hora de salida no sea anterior a la de ingreso",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/aeaeb09bbf49d13fb9fd0a3b50e45b39d52548ec"
     },
     "stats": {
       "total": 15,
@@ -110,6 +110,25 @@
     },
     "coverage": 100,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T12:39:55.000Z",
+      "message": "feat: se lanza un error si el usuario no ingresa una hora de salida",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
   }

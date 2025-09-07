@@ -5,6 +5,9 @@ export function registrarIngreso(horaIngreso) {
     return horaIngreso;
 }
 export function registrarSalida(horaSalida, horaIngreso) {
+    if (!horaSalida) {
+        throw new Error("Hora de salida requerida");
+    }
     const ingresoDate = new Date(horaIngreso);
     const salidaDate = new Date(horaSalida);
 
