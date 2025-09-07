@@ -209,17 +209,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b690f5ac2cbe9be298f6b86fe34bcfa60ccb2107",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T21:22:33.000Z",
       "message": "feat: se implemento el calculo de una tarifa base en Bs. sin tomar en cuenta redondeos hacia arriba y de 2 decimales en presenter.js y index.html",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/b690f5ac2cbe9be298f6b86fe34bcfa60ccb2107"
     },
     "stats": {
       "total": 13,
       "additions": 9,
       "deletions": 4,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T21:51:23.000Z",
+      "message": "feat: se implemento el redondeo hacia arriba y se comento la prueba donde se calculo sin tomar en cuenta el redondeo hacia arriba",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 9,
+      "deletions": 2,
       "date": "2025-09-07"
     },
     "coverage": 100,
