@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4e453b4b24041fa354c07afc489ba036196141ce",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T21:51:23.000Z",
       "message": "feat: se implemento el redondeo hacia arriba y se comento la prueba donde se calculo sin tomar en cuenta el redondeo hacia arriba",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/4e453b4b24041fa354c07afc489ba036196141ce"
     },
     "stats": {
       "total": 11,
@@ -245,5 +245,24 @@
     "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T22:07:41.000Z",
+      "message": "feat: la logica de calculo de tarifa ahora usa 2 decimales",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 9,
+      "deletions": 4,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 11,
+    "failed_tests": 3,
+    "conclusion": "failure"
   }
 ]

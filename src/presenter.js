@@ -6,7 +6,7 @@ const btnIngreso = document.getElementById("btnIngreso");
 const finInput = document.getElementById("fin");
 const btnSalida = document.getElementById("btnSalida");
 const resultadoDiv = document.getElementById("resultado");
-const montoDiv = document.getElementById("montoParcial");
+const montoDiv = document.getElementById("montoTotal");
 
 let horaIngreso = null;
 
@@ -30,7 +30,7 @@ btnSalida.addEventListener("click", () => {
     const horaSalida = registrarSalida(finInput.value, horaIngreso);
     resultadoDiv.innerText = `Salida registrada: ${horaSalida}`;
     const monto = calcularTarifaBasica(horaIngreso, horaSalida);
-    montoDiv.innerText = `Monto parcial: Bs ${monto}`;
+    montoDiv.innerText = `Monto a pagar: Bs ${monto}`;
   } catch (err) {
     resultadoDiv.innerText = err.message;
     montoDiv.innerText = "";

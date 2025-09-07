@@ -23,5 +23,5 @@ export function calcularTarifaBasica(horaIngreso, horaSalida) {
     const diffHoras = Math.ceil((salidaDate - ingresoDate) / (1000 * 60 * 60));
     const tarifaHora = 10; 
     const monto = diffHoras * tarifaHora;
-    return monto;
+    return monto.toFixed(2);
 }
