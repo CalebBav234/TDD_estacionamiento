@@ -41,7 +41,7 @@ describe("Funcionalidad 3 - Calcular tarifa básica por hora (sin redondeo)", ()
     it("debería cobrar 10 Bs por 1 hora completa", () => {
         const ingreso = registrarIngreso("2025-09-08T09:00");
         const salida = registrarSalida("2025-09-08T10:00", ingreso);
-        expect(calcularTarifaBasica(ingreso, salida)).toBe(10);
+        expect(calcularTarifaBasica(ingreso, salida)).toBe("10.00");
     });
     /*it("debería cobrar 5 Bs si la estadía fue de 0.5 horas", () => {
         const ingreso = registrarIngreso("2025-09-08T09:00");
@@ -53,11 +53,11 @@ describe("Funcionalidad 4 - Redondeo por fracción de hora", () => {
     it("debería cobrar 10 Bs por 30 minutos (redondea hacia arriba)", () => {
         const ingreso = registrarIngreso("2025-09-08T09:00");
         const salida = registrarSalida("2025-09-08T09:30", ingreso);
-        expect(calcularTarifaBasica(ingreso, salida)).toBe(10.00);
+        expect(calcularTarifaBasica(ingreso, salida)).toBe("10.00");
     });
     it("debería redondear siempre hacia arriba y mostrar con 2 decimales", () => {
         const ingreso = registrarIngreso("2025-09-08T09:00");
         const salida = registrarSalida("2025-09-08T10:01", ingreso);
-        expect(calcularTarifaBasica(ingreso, salida)).toBe(20.00);
+        expect(calcularTarifaBasica(ingreso, salida)).toBe("20.00");
     });
 });

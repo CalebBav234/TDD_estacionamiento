@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fecb4027d05d289a76e89a11f7a9dbe98aa3aebd",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T22:07:41.000Z",
       "message": "feat: la logica de calculo de tarifa ahora usa 2 decimales",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/fecb4027d05d289a76e89a11f7a9dbe98aa3aebd"
     },
     "stats": {
       "total": 13,
@@ -264,5 +264,24 @@
     "test_count": 11,
     "failed_tests": 3,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T22:14:20.000Z",
+      "message": "feat: la logica de calculo de tarifa ahora usa 2 decimales",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 3,
+      "deletions": 3,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
