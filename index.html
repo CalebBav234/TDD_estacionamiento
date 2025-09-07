@@ -5,11 +5,21 @@
   <title>Estacionamiento</title>
 </head>
 <body>
+
   <h1>Registro de Estacionamiento</h1>
+  
   <label for="inicio">Hora de ingreso:</label>
   <input type="datetime-local" id="inicio" />
   <button id="btnIngreso">Registrar ingreso</button>
+  <br /><br />
+
+  <label for="fin">Hora de salida:</label>
+  <input type="datetime-local" id="fin" />
+  <button id="btnSalida">Registrar salida</button>
+  <br /><br />
+
   <div id="resultado"></div>
+  
   <script type="module" src="./src/presenter.js"></script>
 </body>
 </html>

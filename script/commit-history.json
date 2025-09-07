@@ -133,17 +133,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "75f662f5b0d63deff01034853c0b628493072c24",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T12:55:11.000Z",
       "message": "feat: se implemento el ingreso de entrada en la UI para que use el usuario",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/75f662f5b0d63deff01034853c0b628493072c24"
     },
     "stats": {
       "total": 54,
       "additions": 27,
       "deletions": 27,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T13:07:30.000Z",
+      "message": "feat: se aniadio el registro de ingreso de salida en la UI para que use el usuario.",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 30,
+      "deletions": 1,
       "date": "2025-09-07"
     },
     "coverage": 100,
