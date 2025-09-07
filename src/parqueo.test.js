@@ -24,5 +24,11 @@ describe("Funcionalidad 2 - Registrar hora de salida", () => {
     const salida = registrarSalida("2025-09-07T12:30", ingreso);
     expect(salida).toBe("2025-09-07T12:30");
   });
+  it("deberia lanzar error si la hora de salida es anterior a la de ingreso", () => {
+    const ingreso = registrarIngreso("2025-09-07T08:30");
+    expect(() => registrarSalida("2025-09-07T07:30", ingreso)).toThrow(
+      "La hora de salida no puede ser anterior a la de ingreso"
+    );
+  });
 
 });

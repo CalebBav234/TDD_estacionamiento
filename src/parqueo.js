@@ -5,5 +5,12 @@ export function registrarIngreso(horaIngreso) {
     return horaIngreso;
 }
 export function registrarSalida(horaSalida, horaIngreso) {
-    return horaSalida
+    const ingresoDate = new Date(horaIngreso);
+    const salidaDate = new Date(horaSalida);
+
+    if (salidaDate < ingresoDate) {
+        throw new Error("La hora de salida no puede ser anterior a la de ingreso");
+    }
+
+    return horaSalida;
 }
