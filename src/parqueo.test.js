@@ -19,4 +19,10 @@ describe("Funcionalidad 2 - Registrar hora de salida", () => {
     const salida = registrarSalida("2025-09-07T10:30", ingreso);
     expect(salida).toBe("2025-09-07T10:30");
   });
+  it("deberia registrar y devolver cualquier hora de salida", () => {
+    const ingreso = registrarIngreso("2025-09-07T10:30");
+    const salida = registrarSalida("2025-09-07T12:30", ingreso);
+    expect(salida).toBe("2025-09-07T12:30");
+  });
+
 });

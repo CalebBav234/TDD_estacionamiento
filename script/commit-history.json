@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "325703acf4d07d530b473f6229c0ce666e0f4ed0",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T12:07:29.000Z",
       "message": "feat: se forzo que salga una hora de salidad especificada",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/325703acf4d07d530b473f6229c0ce666e0f4ed0"
     },
     "stats": {
       "total": 13,
@@ -72,6 +72,25 @@
     },
     "coverage": 100,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T12:33:14.000Z",
+      "message": "feat: se implemento de manera correcta el registro de cualquier hora de salida.",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 7,
+      "deletions": 1,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }
