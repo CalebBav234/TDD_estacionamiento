@@ -18,5 +18,10 @@ export function registrarSalida(horaSalida, horaIngreso) {
     return horaSalida;
 }
 export function calcularTarifaBasica(horaIngreso, horaSalida) {
-    return 10;
+    const ingresoDate = new Date(horaIngreso);
+    const salidaDate = new Date(horaSalida);
+    const diffHoras = (salidaDate - ingresoDate) / (1000 * 60 * 60);
+    const tarifaHora = 10; 
+    const monto = diffHoras * tarifaHora;
+    return monto;
 }

@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ff3b98ea9bcba40d60cdbf8eab1fbcbf208074f7",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T21:04:30.000Z",
       "message": "feat: forzar que salga el valor Bs 10 en el calculo de tarifa",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/ff3b98ea9bcba40d60cdbf8eab1fbcbf208074f7"
     },
     "stats": {
       "total": 13,
@@ -186,6 +186,25 @@
     },
     "coverage": 100,
     "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T21:08:54.000Z",
+      "message": "feat: se implemento de manera correcta el calculo de la tarifa base de dia sin redondeos hacia arriba y sin tomar en cuenta fracciones de tiempo",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 11,
+      "deletions": 2,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
   }
