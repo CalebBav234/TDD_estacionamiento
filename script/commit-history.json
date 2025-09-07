@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "4d0c48b8742e4952d6dc5fb99763e1687e4cdace",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T11:43:51.000Z",
       "message": "feat: se forzo que muestre la hora esperada",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/4d0c48b8742e4952d6dc5fb99763e1687e4cdace"
     },
     "stats": {
       "total": 2033,
@@ -15,6 +15,25 @@
     },
     "coverage": 100,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T11:47:56.000Z",
+      "message": "feat: se muestra cualquier hora ingresada",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 5,
+      "deletions": 2,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }
