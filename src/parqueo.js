@@ -17,3 +17,6 @@ export function registrarSalida(horaSalida, horaIngreso) {
 
     return horaSalida;
 }
+export function calcularTarifaBasica(horaIngreso, horaSalida) {
+    return 10;
+}

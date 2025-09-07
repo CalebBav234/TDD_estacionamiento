@@ -1,4 +1,4 @@
-import { registrarIngreso, registrarSalida  } from "./parqueo.js";
+import { registrarIngreso, registrarSalida, calcularTarifaBasica  } from "./parqueo.js";
 
 describe("Funcionalidad 1 - Registrar hora de ingreso",  () => {
   it("deberia mostrar la hora de ingreso y devolverlo en formato valido", () => {
@@ -36,4 +36,12 @@ describe("Funcionalidad 2 - Registrar hora de salida", () => {
       "Hora de salida requerida"
     );
   });
+});
+describe("Funcionalidad 3 - Calcular tarifa básica por hora (sin redondeo)", () => {
+    it("debería cobrar 10 Bs por 1 hora completa", () => {
+        const ingreso = registrarIngreso("2025-09-08T09:00");
+        const salida = registrarSalida("2025-09-08T10:00", ingreso);
+        expect(calcularTarifaBasica(ingreso, salida)).toBe(10);
+    });
+    
 });
