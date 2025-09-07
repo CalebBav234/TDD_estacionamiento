@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-07T11:43:51.000Z",
+      "message": "feat: se forzo que muestre la hora esperada",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 2033,
+      "additions": 979,
+      "deletions": 1054,
+      "date": "2025-09-07"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
