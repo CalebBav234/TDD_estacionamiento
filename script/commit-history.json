@@ -456,12 +456,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e3167bd88ffad5d34993a8f2ef369070de9b97e5",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-08T18:44:14.000Z",
       "message": "feat: se implemento el calculo de monto final a pagar en la UI",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/e3167bd88ffad5d34993a8f2ef369070de9b97e5"
     },
     "stats": {
       "total": 40,
@@ -471,6 +471,25 @@
     },
     "coverage": 100,
     "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-08T18:59:28.000Z",
+      "message": "feat: se implemento la logica de ticket perdido",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 21,
     "failed_tests": 0,
     "conclusion": "success"
   }

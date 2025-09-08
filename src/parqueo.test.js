@@ -1,4 +1,4 @@
-import { registrarIngreso, registrarSalida, calcularTarifaBasica, calcularDesglosePorDias, calcularMontoTotalFinal} from "./parqueo.js";
+import { registrarIngreso, registrarSalida, calcularTarifaBasica, calcularDesglosePorDias, calcularMontoTotalFinal, calcularMontoTicketPerdido} from "./parqueo.js";
 
 describe("Funcionalidad 1 - Registrar hora de ingreso",  () => {
   it("deberia mostrar la hora de ingreso y devolverlo en formato valido", () => {
@@ -125,4 +125,11 @@ describe("Funcionalidad 8 - Calcular monto total final", () => {
     expect(total).toBe(108);
   });
 });
+describe("Funcionalidad 9 - Ticket perdido", () => {
+  it("debería cobrar Bs 80 cuando se pierde el ticket", () => {
+    const monto = calcularMontoTicketPerdido();
+    expect(monto).toBe(80);
+  });
+});
+
 

@@ -83,6 +83,9 @@ export function calcularDesglosePorDias(horaIngreso, horaSalida) {
   }
   return desglose;
 }
+export function calcularMontoTicketPerdido() {
+  return 80;
+}
 export function calcularMontoTotalFinal(horaIngreso, horaSalida) {
   const desglose = calcularDesglosePorDias(horaIngreso, horaSalida);
   const total = desglose.reduce((suma, d) => suma + d.montoConTope, 0);
