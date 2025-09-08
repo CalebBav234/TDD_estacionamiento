@@ -1,4 +1,4 @@
-import { registrarIngreso, registrarSalida, calcularTarifaBasica  } from "./parqueo.js";
+import { registrarIngreso, registrarSalida, calcularTarifaBasica, calcularDesglosePorDias  } from "./parqueo.js";
 
 describe("Funcionalidad 1 - Registrar hora de ingreso",  () => {
   it("deberia mostrar la hora de ingreso y devolverlo en formato valido", () => {
@@ -89,5 +89,15 @@ describe("Funcionalidad 6 - Tope máximo diario", () => {
     const ingreso = registrarIngreso("2025-09-08T08:00");
     const salida = registrarSalida("2025-09-09T10:00", ingreso);
     expect(calcularTarifaBasica(ingreso, salida)).toBe("100.00"); 
+  });
+});
+describe("Funcionalidad 7 - Desglose por días", () => {
+  it("debería devolver el desglose de un solo día", () => {
+    const ingreso = registrarIngreso("2025-09-08T08:00");
+    const salida = registrarSalida("2025-09-08T20:30", ingreso);
+    const desglose = calcularDesglosePorDias(ingreso, salida);
+    expect(desglose).toEqual([
+      { fecha: "2025-09-08", montoSinTope: 90, montoConTope: 50 } 
+    ]);
   });
 });

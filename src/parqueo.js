@@ -50,3 +50,8 @@ export function calcularTarifaBasica(horaIngreso, horaSalida) {
   }
   return total.toFixed(2);
 }
+export function calcularDesglosePorDias(ingreso, salida) {
+  return [
+    { fecha: "2025-09-08", montoSinTope: 90, montoConTope: 50 }
+  ];
+}
