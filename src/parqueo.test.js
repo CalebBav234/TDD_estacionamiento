@@ -79,3 +79,10 @@ describe("Funcionalidad 5 - Aplicar tarifa nocturna", () => {
     });
 
 });
+describe("Funcionalidad 6 - Tope máximo diario", () => {
+  it("debería aplicar tope de 50 Bs si en un mismo día se supera ese monto", () => {
+    const ingreso = registrarIngreso("2025-09-08T08:00");
+    const salida = registrarSalida("2025-09-08T20:30", ingreso);
+    expect(calcularTarifaBasica(ingreso, salida)).toBe("50.00");
+  });
+});

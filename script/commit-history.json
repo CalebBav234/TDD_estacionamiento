@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3468054605e5c1552b1b0063702e4c19022236aa",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-07T23:40:09.000Z",
       "message": "feat: se implemento el calculo de tarifas en la hora nocturna",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/3468054605e5c1552b1b0063702e4c19022236aa"
     },
     "stats": {
       "total": 41,
@@ -300,6 +300,25 @@
     },
     "coverage": 100,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-08T15:29:18.000Z",
+      "message": "feat: forzar que salga el topo maximo diario de Bs 50",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 15,
+      "deletions": 1,
+      "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
   }
