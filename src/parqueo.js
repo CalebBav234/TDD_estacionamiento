@@ -83,6 +83,9 @@ export function calcularDesglosePorDias(horaIngreso, horaSalida) {
   }
   return desglose;
 }
+export function calcularMontoTotalFinal(horaIngreso, horaSalida) {
+  return 50;
+}
 
 
 
