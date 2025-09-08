@@ -118,5 +118,11 @@ describe("Funcionalidad 8 - Calcular monto total final", () => {
     const total = calcularMontoTotalFinal(ingreso, salida);
     expect(total).toBe(50); 
   });
+  it("debería devolver la suma de varios días con topes aplicados", () => {
+    const ingreso = registrarIngreso("2025-09-08T22:00");
+    const salida = registrarSalida("2025-09-10T07:00", ingreso);
+    const total = calcularMontoTotalFinal(ingreso, salida);
+    expect(total).toBe(108);
+  });
 });
 

@@ -418,12 +418,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9492c0f82b09aec72219e55b70d9fe4526f3967b",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-08T18:33:12.000Z",
       "message": "feat: se forzo que salga el resultado esperado del monto total",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/9492c0f82b09aec72219e55b70d9fe4526f3967b"
     },
     "stats": {
       "total": 14,
@@ -433,6 +433,25 @@
     },
     "coverage": 100,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-08T18:36:16.000Z",
+      "message": "feat: se implemento de manera correcta la logica del calculo del monto total",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }
