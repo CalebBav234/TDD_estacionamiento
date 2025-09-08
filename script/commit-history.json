@@ -437,17 +437,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "eb03a2a51134daa30cf38cbb33ba2f01e31fc715",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-08T18:36:16.000Z",
       "message": "feat: se implemento de manera correcta la logica del calculo del monto total",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/eb03a2a51134daa30cf38cbb33ba2f01e31fc715"
     },
     "stats": {
       "total": 10,
       "additions": 9,
       "deletions": 1,
+      "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-08T18:44:14.000Z",
+      "message": "feat: se implemento el calculo de monto final a pagar en la UI",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 23,
+      "deletions": 17,
       "date": "2025-09-08"
     },
     "coverage": 100,
