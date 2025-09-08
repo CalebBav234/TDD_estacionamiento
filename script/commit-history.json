@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5cf7ea9bd90e818d36224a0a23c43b71d38e134e",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-08T16:02:59.000Z",
       "message": "feat: forzar que salga el desglose esperado en la prueba de la funcionalidad 7",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/5cf7ea9bd90e818d36224a0a23c43b71d38e134e"
     },
     "stats": {
       "total": 17,
@@ -376,6 +376,25 @@
     },
     "coverage": 100,
     "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-08T17:23:34.000Z",
+      "message": "feat: se implemento de manera correcta la logica del desglose por dia",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 59,
+      "additions": 53,
+      "deletions": 6,
+      "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 18,
     "failed_tests": 0,
     "conclusion": "success"
   }

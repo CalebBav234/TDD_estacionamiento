@@ -97,7 +97,17 @@ describe("Funcionalidad 7 - Desglose por días", () => {
     const salida = registrarSalida("2025-09-08T20:30", ingreso);
     const desglose = calcularDesglosePorDias(ingreso, salida);
     expect(desglose).toEqual([
-      { fecha: "2025-09-08", montoSinTope: 90, montoConTope: 50 } 
+      { fecha: "2025-09-08", montoSinTope: 130, montoConTope: 50 } 
+    ]);
+  });
+  it("debería devolver el desglose de múltiples días con topes aplicados", () => {
+    const ingreso = registrarIngreso("2025-09-08T22:00");
+    const salida = registrarSalida("2025-09-10T07:00", ingreso);
+    const desglose = calcularDesglosePorDias(ingreso, salida);
+    expect(desglose).toEqual([
+      { fecha: "2025-09-08", montoSinTope: 12, montoConTope: 12 },   
+      { fecha: "2025-09-09", montoSinTope: 208, montoConTope: 50 },  
+      { fecha: "2025-09-10", montoSinTope: 46, montoConTope: 46}   
     ]);
   });
 });
