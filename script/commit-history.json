@@ -475,17 +475,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b42317e9a1c2532db7107f10bb82f571fc9f32d6",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-08T18:59:28.000Z",
       "message": "feat: se implemento la logica de ticket perdido",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/b42317e9a1c2532db7107f10bb82f571fc9f32d6"
     },
     "stats": {
       "total": 12,
       "additions": 11,
       "deletions": 1,
+      "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 21,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-08T19:15:39.000Z",
+      "message": "feat: se implemento la opcion de ticket perdido en la UI",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 40,
+      "deletions": 8,
       "date": "2025-09-08"
     },
     "coverage": 100,

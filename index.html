@@ -6,9 +6,8 @@
   <title>Registro de Estacionamiento</title>
 </head>
 <body>
-
   <h1>Registro de Estacionamiento</h1>
-  
+
   <label for="inicio">Hora de ingreso:</label>
   <input type="datetime-local" id="inicio" />
   <button id="btnIngreso">Registrar ingreso</button>
@@ -19,9 +18,15 @@
   <button id="btnSalida">Registrar salida</button>
   <br /><br />
 
+  <label for="ticketPerdido">
+    <input type="checkbox" id="ticketPerdido" /> Ticket perdido
+  </label>
+  <br /><br />
+
   <div id="resultado"></div>
   <div id="montoTotal"></div>
   <script type="module" src="./src/presenter.js"></script>
+
 </body>
 </html>
 

@@ -1,13 +1,41 @@
-import { registrarIngreso, registrarSalida, calcularTarifaBasica, calcularDesglosePorDias, calcularMontoTotalFinal } from "./parqueo.js";
+import { 
+  registrarIngreso, 
+  registrarSalida, 
+  calcularTarifaBasica, 
+  calcularDesglosePorDias, 
+  calcularMontoTotalFinal, 
+  calcularMontoTicketPerdido 
+} from "./parqueo.js";
 
 const inicioInput = document.getElementById("inicio");
-const btnIngreso = document.getElementById("btnIngreso");
 const finInput = document.getElementById("fin");
+const btnIngreso = document.getElementById("btnIngreso");
 const btnSalida = document.getElementById("btnSalida");
+const ticketPerdidoChk = document.getElementById("ticketPerdido");
 const resultadoDiv = document.getElementById("resultado");
 const montoDiv = document.getElementById("montoTotal");
 
 let horaIngreso = null;
+
+ticketPerdidoChk.addEventListener("change", () => {
+  if (ticketPerdidoChk.checked) {
+    inicioInput.disabled = true;
+    finInput.disabled = true;
+    btnIngreso.disabled = true;
+    btnSalida.disabled = true;
+    const monto = calcularMontoTicketPerdido().toFixed(2);
+    resultadoDiv.innerText = "Ticket marcado como perdido.";
+    montoDiv.innerHTML = `<h3>Monto a pagar: Bs ${monto}</h3>`;
+  } else {
+    inicioInput.disabled = false;
+    finInput.disabled = false;
+    btnIngreso.disabled = false;
+    btnSalida.disabled = false;
+    resultadoDiv.innerText = "";
+    montoDiv.innerHTML = "";
+    horaIngreso = null;
+  }
+});
 
 btnIngreso.addEventListener("click", () => {
   try {
@@ -18,7 +46,6 @@ btnIngreso.addEventListener("click", () => {
     resultadoDiv.innerText = err.message;
   }
 });
-
 btnSalida.addEventListener("click", () => {
   try {
     if (!horaIngreso) {
@@ -40,12 +67,12 @@ btnSalida.addEventListener("click", () => {
       html += `
         <tr>
           <td>${d.fecha}</td>
-          <td>Bs ${d.montoSinTope}</td>
-          <td>Bs ${d.montoConTope}</td>
+          <td>Bs ${d.montoSinTope.toFixed(2)}</td>
+          <td>Bs ${d.montoConTope.toFixed(2)}</td>
         </tr>`;
     });
     html += `</table>`;
-    html += `<h3>Total final a pagar: Bs ${totalFinal}</h3>`;
+    html += `<h3>Total final a pagar: Bs ${totalFinal.toFixed(2)}</h3>`;
     montoDiv.innerHTML = html;
   } catch (err) {
     resultadoDiv.innerText = err.message;
