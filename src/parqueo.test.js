@@ -85,4 +85,9 @@ describe("Funcionalidad 6 - Tope máximo diario", () => {
     const salida = registrarSalida("2025-09-08T20:30", ingreso);
     expect(calcularTarifaBasica(ingreso, salida)).toBe("50.00");
   });
+  it("debería aplicar tope separado por cada día calendario", () => {
+    const ingreso = registrarIngreso("2025-09-08T08:00");
+    const salida = registrarSalida("2025-09-09T10:00", ingreso);
+    expect(calcularTarifaBasica(ingreso, salida)).toBe("100.00"); 
+  });
 });

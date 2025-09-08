@@ -27,17 +27,26 @@ export function calcularTarifaBasica(horaIngreso, horaSalida) {
   while (actual < salidaDate) {
     let finDia = new Date(actual);
     finDia.setHours(23, 59, 59, 999);
-    
-    const siguienteHora = new Date(actual);
-    siguienteHora.setHours(siguienteHora.getHours() + 1);
-    const hora = actual.getHours();
-    const tarifa = (hora >= 22 || hora < 6) ? 6 : 10;
-    total += tarifa;
-    actual = siguienteHora;
-  }
-  if (total>50){
-    total=50;
-    return total.toFixed(2);
+     if (salidaDate < finDia) {
+      finDia = salidaDate;
+    }
+    let montoDia = 0;
+    let horaActual = new Date(actual);
+    while (horaActual < finDia) {
+      const siguienteHora = new Date(horaActual);
+      siguienteHora.setHours(siguienteHora.getHours() + 1);
+      const hora = horaActual.getHours();
+      const tarifa = (hora >= 22 || hora < 6) ? 6 : 10;
+      montoDia += tarifa;
+      horaActual = siguienteHora;
+    }
+    if (montoDia > 50){
+        montoDia = 50;
+    }
+    total += montoDia;
+    actual = new Date(finDia);
+    actual.setDate(actual.getDate() + 1);
+    actual.setHours(0, 0, 0, 0);
   }
   return total.toFixed(2);
 }
