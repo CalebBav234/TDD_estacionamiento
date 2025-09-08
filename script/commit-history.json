@@ -380,17 +380,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "00eee1168ddbf70a03f489f133f0a5fc09eab838",
     "author": "Caleb",
     "commit": {
       "date": "2025-09-08T17:23:34.000Z",
       "message": "feat: se implemento de manera correcta la logica del desglose por dia",
-      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/00eee1168ddbf70a03f489f133f0a5fc09eab838"
     },
     "stats": {
       "total": 59,
       "additions": 53,
       "deletions": 6,
+      "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 18,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Caleb",
+    "commit": {
+      "date": "2025-09-08T17:39:51.000Z",
+      "message": "feat: se implemento el desglose por dia en la UI",
+      "url": "https://github.com/CalebBav234/TDD_estacionamiento/commit/HEAD"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 21,
+      "deletions": 12,
       "date": "2025-09-08"
     },
     "coverage": 100,
